@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		720FD0D11C01CB2D00A46BD1 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720FD0D01C01CB2D00A46BD1 /* PushViewController.swift */; };
-		725BA58F1C00087600B0306D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BA58E1C00087600B0306D /* AppDelegate.swift */; };
-		725BA5941C00087600B0306D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 725BA5921C00087600B0306D /* Main.storyboard */; };
-		725BA5961C00087600B0306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725BA5951C00087600B0306D /* Assets.xcassets */; };
-		725BA5991C00087600B0306D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 725BA5971C00087600B0306D /* LaunchScreen.storyboard */; };
-		725BA5A11C0008D200B0306D /* DropBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BA5A01C0008D200B0306D /* DropBoxViewController.swift */; };
-		725BA5A31C01BE6800B0306D /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BA5A21C01BE6800B0306D /* SnapViewController.swift */; };
+		72C4CF491C01F6B500DCF3C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4CF3D1C01F6B500DCF3C0 /* AppDelegate.swift */; };
+		72C4CF4A1C01F6B500DCF3C0 /* DropBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4CF3F1C01F6B500DCF3C0 /* DropBoxViewController.swift */; };
+		72C4CF4B1C01F6B500DCF3C0 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4CF401C01F6B500DCF3C0 /* PushViewController.swift */; };
+		72C4CF4C1C01F6B500DCF3C0 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4CF411C01F6B500DCF3C0 /* SnapViewController.swift */; };
+		72C4CF4D1C01F6B500DCF3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF431C01F6B500DCF3C0 /* Assets.xcassets */; };
+		72C4CF501C01F6B500DCF3C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF481C01F6B500DCF3C0 /* Info.plist */; };
+		72C4CF521C01F75200DCF3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF511C01F75200DCF3C0 /* Main.storyboard */; };
+		72C4CF541C01F76100DCF3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF531C01F76100DCF3C0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		720FD0D01C01CB2D00A46BD1 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		725BA58B1C00087600B0306D /* UIDynamicsOfUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDynamicsOfUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		725BA58E1C00087600B0306D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		725BA5931C00087600B0306D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		725BA5951C00087600B0306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		725BA5981C00087600B0306D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		725BA59A1C00087600B0306D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		725BA5A01C0008D200B0306D /* DropBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropBoxViewController.swift; sourceTree = "<group>"; };
-		725BA5A21C01BE6800B0306D /* SnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		72C4CF3D1C01F6B500DCF3C0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72C4CF3F1C01F6B500DCF3C0 /* DropBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropBoxViewController.swift; sourceTree = "<group>"; };
+		72C4CF401C01F6B500DCF3C0 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		72C4CF411C01F6B500DCF3C0 /* SnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		72C4CF431C01F6B500DCF3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72C4CF481C01F6B500DCF3C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72C4CF511C01F75200DCF3C0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		72C4CF531C01F76100DCF3C0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +59,48 @@
 		725BA58D1C00087600B0306D /* UIDynamicsOfUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				725BA58E1C00087600B0306D /* AppDelegate.swift */,
-				725BA5A01C0008D200B0306D /* DropBoxViewController.swift */,
-				725BA5921C00087600B0306D /* Main.storyboard */,
-				725BA5951C00087600B0306D /* Assets.xcassets */,
-				725BA5971C00087600B0306D /* LaunchScreen.storyboard */,
-				725BA59A1C00087600B0306D /* Info.plist */,
-				725BA5A21C01BE6800B0306D /* SnapViewController.swift */,
-				720FD0D01C01CB2D00A46BD1 /* PushViewController.swift */,
+				72C4CF3B1C01F6B500DCF3C0 /* Classes */,
+				72C4CF421C01F6B500DCF3C0 /* Resources */,
 			);
 			path = UIDynamicsOfUIKit;
+			sourceTree = "<group>";
+		};
+		72C4CF3B1C01F6B500DCF3C0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				72C4CF3C1C01F6B500DCF3C0 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		72C4CF3C1C01F6B500DCF3C0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72C4CF511C01F75200DCF3C0 /* Main.storyboard */,
+				72C4CF3D1C01F6B500DCF3C0 /* AppDelegate.swift */,
+				72C4CF3E1C01F6B500DCF3C0 /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		72C4CF3E1C01F6B500DCF3C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72C4CF3F1C01F6B500DCF3C0 /* DropBoxViewController.swift */,
+				72C4CF401C01F6B500DCF3C0 /* PushViewController.swift */,
+				72C4CF411C01F6B500DCF3C0 /* SnapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		72C4CF421C01F6B500DCF3C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72C4CF531C01F76100DCF3C0 /* LaunchScreen.storyboard */,
+				72C4CF431C01F6B500DCF3C0 /* Assets.xcassets */,
+				72C4CF481C01F6B500DCF3C0 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				725BA5991C00087600B0306D /* LaunchScreen.storyboard in Resources */,
-				725BA5961C00087600B0306D /* Assets.xcassets in Resources */,
-				725BA5941C00087600B0306D /* Main.storyboard in Resources */,
+				72C4CF501C01F6B500DCF3C0 /* Info.plist in Resources */,
+				72C4CF4D1C01F6B500DCF3C0 /* Assets.xcassets in Resources */,
+				72C4CF541C01F76100DCF3C0 /* LaunchScreen.storyboard in Resources */,
+				72C4CF521C01F75200DCF3C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				725BA5A31C01BE6800B0306D /* SnapViewController.swift in Sources */,
-				725BA5A11C0008D200B0306D /* DropBoxViewController.swift in Sources */,
-				720FD0D11C01CB2D00A46BD1 /* PushViewController.swift in Sources */,
-				725BA58F1C00087600B0306D /* AppDelegate.swift in Sources */,
+				72C4CF4C1C01F6B500DCF3C0 /* SnapViewController.swift in Sources */,
+				72C4CF491C01F6B500DCF3C0 /* AppDelegate.swift in Sources */,
+				72C4CF4A1C01F6B500DCF3C0 /* DropBoxViewController.swift in Sources */,
+				72C4CF4B1C01F6B500DCF3C0 /* PushViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		725BA5921C00087600B0306D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				725BA5931C00087600B0306D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		725BA5971C00087600B0306D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				725BA5981C00087600B0306D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		725BA59B1C00087600B0306D /* Debug */ = {
@@ -257,7 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIDynamicsOfUIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIDynamicsOfUIKit/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.lucasleelz.UIDynamicsOfUIKit;
@@ -269,7 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = UIDynamicsOfUIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UIDynamicsOfUIKit/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.lucasleelz.UIDynamicsOfUIKit;

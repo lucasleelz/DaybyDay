@@ -8,10 +8,9 @@
 
 import UIKit
 
-/**
-    action: Selector 如果所使用的方法是私有方法会调用失败。
- */
-class ViewController: UIViewController, UICollisionBehaviorDelegate {
+/// action: Selector 如果所使用的方法是私有方法会调用失败。
+
+class DropBoxViewController: UIViewController, UICollisionBehaviorDelegate {
 
     private lazy var dropBoxImageView: UIImageView = {
         var result = UIImageView(frame: CGRectMake(100, 100, 100, 100))

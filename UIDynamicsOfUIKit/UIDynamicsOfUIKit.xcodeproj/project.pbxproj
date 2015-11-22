@@ -15,6 +15,7 @@
 		72C4CF501C01F6B500DCF3C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF481C01F6B500DCF3C0 /* Info.plist */; };
 		72C4CF521C01F75200DCF3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF511C01F75200DCF3C0 /* Main.storyboard */; };
 		72C4CF541C01F76100DCF3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72C4CF531C01F76100DCF3C0 /* LaunchScreen.storyboard */; };
+		72C4CF561C0200AC00DCF3C0 /* DynamicItemPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C4CF551C0200AC00DCF3C0 /* DynamicItemPropertiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		72C4CF481C01F6B500DCF3C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C4CF511C01F75200DCF3C0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72C4CF531C01F76100DCF3C0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72C4CF551C0200AC00DCF3C0 /* DynamicItemPropertiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicItemPropertiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				72C4CF3F1C01F6B500DCF3C0 /* DropBoxViewController.swift */,
 				72C4CF401C01F6B500DCF3C0 /* PushViewController.swift */,
 				72C4CF411C01F6B500DCF3C0 /* SnapViewController.swift */,
+				72C4CF551C0200AC00DCF3C0 /* DynamicItemPropertiesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				72C4CF4C1C01F6B500DCF3C0 /* SnapViewController.swift in Sources */,
 				72C4CF491C01F6B500DCF3C0 /* AppDelegate.swift in Sources */,
 				72C4CF4A1C01F6B500DCF3C0 /* DropBoxViewController.swift in Sources */,
+				72C4CF561C0200AC00DCF3C0 /* DynamicItemPropertiesViewController.swift in Sources */,
 				72C4CF4B1C01F6B500DCF3C0 /* PushViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

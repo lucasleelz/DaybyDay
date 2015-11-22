@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--UIDynamics-->
@@ -86,6 +87,29 @@
                                             <segue destination="sR8-pv-vFy" kind="show" id="he0-3r-7KT"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qBR-dq-LXm" style="IBUITableViewCellStyleDefault" id="O6O-It-ApC">
+                                        <rect key="frame" x="0.0" y="196" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O6O-It-ApC" id="9A7-mN-0aN">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DynamicItem Properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qBR-dq-LXm">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="iCh-s2-BLd" kind="show" id="fql-t0-xdr"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -166,6 +190,46 @@
             </objects>
             <point key="canvasLocation" x="1150" y="279"/>
         </scene>
+        <!--Item Properties-->
+        <scene sceneID="ShE-wk-qPb">
+            <objects>
+                <viewController id="iCh-s2-BLd" customClass="DynamicItemPropertiesViewController" customModule="UIDynamicsOfUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pOp-Re-MS3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tug-zZ-xfe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T5u-yO-QoU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box1" translatesAutoresizingMaskIntoConstraints="NO" id="BQT-Rs-4D6">
+                                <rect key="frame" x="38" y="72" width="100" height="100"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box2" translatesAutoresizingMaskIntoConstraints="NO" id="Xa3-PA-p3V">
+                                <rect key="frame" x="462" y="72" width="100" height="100"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQT-Rs-4D6" firstAttribute="leading" secondItem="T5u-yO-QoU" secondAttribute="leadingMargin" constant="18" id="8hp-o7-Hbw"/>
+                            <constraint firstItem="Xa3-PA-p3V" firstAttribute="top" secondItem="pOp-Re-MS3" secondAttribute="bottom" constant="8" symbolic="YES" id="InK-do-wYT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xa3-PA-p3V" secondAttribute="trailing" constant="18" id="J5u-hS-mpP"/>
+                            <constraint firstItem="BQT-Rs-4D6" firstAttribute="top" secondItem="pOp-Re-MS3" secondAttribute="bottom" constant="8" symbolic="YES" id="o2I-rO-miV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Item Properties" id="EFQ-Hi-utV"/>
+                    <connections>
+                        <outlet property="dropBox1ImageView" destination="BQT-Rs-4D6" id="nVA-q0-0in"/>
+                        <outlet property="dropBox2ImageView" destination="Xa3-PA-p3V" id="b8w-va-JcB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URN-YY-aeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="964"/>
+        </scene>
         <!--DropBox-->
         <scene sceneID="BkU-hc-OaW">
             <objects>
@@ -187,4 +251,8 @@
             <point key="canvasLocation" x="1150" y="-1047"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Box1" width="100" height="100"/>
+        <image name="Box2" width="100" height="100"/>
+    </resources>
 </document>

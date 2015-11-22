@@ -79,7 +79,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
             break
         }
         self.attachmentBehavior?.anchorPoint = gesture.locationInView(self.view)
-        self.dropBoxImageView.center = self.attachmentBehavior!.anchorPoint
+        self.dropBoxImageView.center = CGPointMake(self.attachmentBehavior!.anchorPoint.x, self.attachmentBehavior!.anchorPoint.y + 100)
     }
 }
 

@@ -8,22 +8,31 @@
 
 import UIKit
 
+/**
+    action: Selector 如果所使用的方法是私有方法会调用失败。
+ */
 class ViewController: UIViewController, UICollisionBehaviorDelegate {
 
     private lazy var dropBoxImageView: UIImageView = {
-        var result = UIImageView(frame: CGRectMake(100, 50, 100, 100))
+        var result = UIImageView(frame: CGRectMake(100, 100, 100, 100))
         result.image = UIImage(named: "Box1")?.imageWithRenderingMode(.AlwaysTemplate)
         result.tintColor = UIColor.darkGrayColor()
+        result.userInteractionEnabled = true
         return result
     }()
     
     private var animator: UIDynamicAnimator?
+    
+    private var attachmentBehavior: UIAttachmentBehavior?
 
     // MARK: View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(self.dropBoxImageView)
+        
+        let panGestureReceognizer = UIPanGestureRecognizer(target: self, action: "handleDropPan:")
+        self.view.addGestureRecognizer(panGestureReceognizer)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -40,6 +49,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         animator!.addBehavior(collisionBehavior)
     }
     
+    // MARK: UICollisionBehaviorDelegate
+    
     func collisionBehavior(behavior: UICollisionBehavior, beganContactForItem item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying?, atPoint p: CGPoint) {
         if let dropBoxView = item as? UIView {
             dropBoxView.tintColor = UIColor.lightGrayColor()
@@ -50,6 +61,23 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         if let dropBoxView = item as? UIView {
             dropBoxView.tintColor = UIColor.darkGrayColor()
         }
+    }
+    
+    // MARK: UIGestureRecognizer
+    
+    func handleDropPan(gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .Began:
+            if (self.attachmentBehavior == nil) {
+                let attachmentAnchor = self.dropBoxImageView.center
+                self.attachmentBehavior = UIAttachmentBehavior(item: self.dropBoxImageView, attachedToAnchor: attachmentAnchor)
+                animator!.addBehavior(self.attachmentBehavior!)
+            }
+        default:
+            break
+        }
+        self.attachmentBehavior?.anchorPoint = gesture.locationInView(self.view)
+        self.dropBoxImageView.center = self.attachmentBehavior!.anchorPoint
     }
 }
 

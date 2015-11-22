@@ -71,6 +71,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
             if (self.attachmentBehavior == nil) {
                 let attachmentAnchor = self.dropBoxImageView.center
                 self.attachmentBehavior = UIAttachmentBehavior(item: self.dropBoxImageView, attachedToAnchor: attachmentAnchor)
+                self.attachmentBehavior?.frequency = 1.0 // 振荡频率
+                self.attachmentBehavior?.damping = 0.1   // 临界阻尼
                 animator!.addBehavior(self.attachmentBehavior!)
             }
         default:

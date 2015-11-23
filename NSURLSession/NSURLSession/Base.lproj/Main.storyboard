@@ -47,7 +47,6 @@
                                             <action selector="startBackground:" destination="BYZ-38-t0r" id="Gh3-nE-kd4"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="flexibleSpace" id="tCd-b9-QJe"/>
                                     <barButtonItem title="Cancel" id="5d9-P3-ojK">
                                         <connections>
                                             <action selector="cancelCancellable:" destination="BYZ-38-t0r" id="E25-Ax-A29"/>

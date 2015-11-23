@@ -4,4 +4,7 @@
    <FileRef
       location = "group:UIDynamicsOfUIKit/UIDynamicsOfUIKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:NSURLSession/NSURLSession.xcodeproj">
+   </FileRef>
 </Workspace>

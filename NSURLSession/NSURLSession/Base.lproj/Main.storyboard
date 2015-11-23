@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSURLSession" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-v1-ZGq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <animations/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-dv-c4h">
+                                <rect key="frame" x="0.0" y="554" width="600" height="2"/>
+                                <animations/>
+                            </progressView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tP-Pc-jSV">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nYO-v1-1Xw"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Cancelable" id="yta-3h-jEO">
+                                        <connections>
+                                            <action selector="startCancellable:" destination="BYZ-38-t0r" id="cds-ny-HqR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Resumable" id="uKw-Uh-aI0">
+                                        <connections>
+                                            <action selector="startResumable:" destination="BYZ-38-t0r" id="HIb-fo-0PH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="BG" id="XAR-a3-TXn">
+                                        <connections>
+                                            <action selector="startBackground:" destination="BYZ-38-t0r" id="Gh3-nE-kd4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="tCd-b9-QJe"/>
+                                    <barButtonItem title="Cancel" id="5d9-P3-ojK">
+                                        <connections>
+                                            <action selector="cancelCancellable:" destination="BYZ-38-t0r" id="E25-Ax-A29"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ceZ-v1-ZGq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cu6-0r-asX"/>
+                            <constraint firstItem="ceZ-v1-ZGq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dvf-Mn-u3q"/>
+                            <constraint firstItem="ceZ-v1-ZGq" firstAttribute="centerX" secondItem="5tP-Pc-jSV" secondAttribute="centerX" id="Ek8-Kf-zMT"/>
+                            <constraint firstItem="ceZ-v1-ZGq" firstAttribute="bottom" secondItem="5tP-Pc-jSV" secondAttribute="top" id="FDL-GS-2kp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5tP-Pc-jSV" secondAttribute="bottom" id="OJi-ms-p97"/>
+                            <constraint firstItem="ceZ-v1-ZGq" firstAttribute="leading" secondItem="cdv-dv-c4h" secondAttribute="leading" id="UmQ-3o-ESK"/>
+                            <constraint firstItem="5tP-Pc-jSV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ate-3z-3i8"/>
+                            <constraint firstAttribute="trailing" secondItem="5tP-Pc-jSV" secondAttribute="trailing" id="fw5-87-W7Z"/>
+                            <constraint firstItem="5tP-Pc-jSV" firstAttribute="top" secondItem="cdv-dv-c4h" secondAttribute="bottom" id="g0P-mO-yNr"/>
+                            <constraint firstItem="ceZ-v1-ZGq" firstAttribute="trailing" secondItem="cdv-dv-c4h" secondAttribute="trailing" id="kRi-pW-gdE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ceZ-v1-ZGq" id="49h-FD-bYt"/>
+                        <outlet property="progressView" destination="cdv-dv-c4h" id="y52-Ir-K5P"/>
+                        <outletCollection property="startButtons" destination="yta-3h-jEO" collectionClass="NSMutableArray" id="DDk-LI-rao"/>
+                        <outletCollection property="startButtons" destination="uKw-Uh-aI0" collectionClass="NSMutableArray" id="hbV-Xy-8w0"/>
+                        <outletCollection property="startButtons" destination="XAR-a3-TXn" collectionClass="NSMutableArray" id="PxK-wu-J96"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="311"/>
+        </scene>
+    </scenes>
+</document>
